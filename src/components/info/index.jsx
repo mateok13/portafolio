@@ -3,7 +3,13 @@ import React from 'react';
 
 function Info() {
   return (
-    <div>Info</div>
+    <div>
+      <h1>Sobre mi</h1>
+      <img src="" alt="" />
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum, iure magnam porro at perferendis doloremque ipsam architecto minus saepe dolor fuga itaque, tempora autem eum. Excepturi vero sunt dolorem aperiam!
+      </p>
+    </div>
   )
 }
 
