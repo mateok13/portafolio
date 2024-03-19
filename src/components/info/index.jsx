@@ -1,9 +1,10 @@
 // eslint-disable-next-line no-unused-vars
 import React from 'react';
+import style from './Info.module.css'
 
 function Info() {
   return (
-    <div>
+    <div className={style.contenido}>
       <h1>Sobre mi</h1>
       <img src="" alt="" />
       <p>
