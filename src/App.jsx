@@ -1,27 +1,25 @@
-import {Routes, Route, Navigate} from "react-router-dom";
-import Principal from "./components/principal";
+import { useRef } from 'react';
+import Navbar from "./components/navbar";
 import Info from "./components/info";
 import Habilidades from "./components/habilidades";
 import Proyectos from "./components/proyectos";
 import Contacto from "./components/contacto";
-import Navbar from "./components/navbar";
-
 
 function App() {
+  const aboutRef = useRef(null);
+  const skillsRef = useRef(null);
+  const projectsRef = useRef(null);
+  const contactRef = useRef(null);
 
   return (
     <>
-      <Navbar/>
-      <Routes>
-        <Route path="/" element={<Principal/>}/>
-        <Route path="/info" element={<Info/>}/>
-        <Route path="/skills" element={<Habilidades/>}/>
-        <Route path="/projects" element={<Proyectos/>}/>
-        <Route path="/contact" element={<Contacto/>}/>
-        <Route path="*" element={<Navigate replace to="/"/>}/>
-      </Routes>
+      <Navbar aboutRef={aboutRef} skillsRef={skillsRef} projectsRef={projectsRef} contactRef={contactRef}/>
+      <div ref={aboutRef}><Info/></div>
+      <div ref={skillsRef}><Habilidades/></div>
+      <div ref={projectsRef}><Proyectos/></div>
+      <div ref={contactRef}><Contacto/></div>
     </>
   )
 }
 
-export default App
+export default App;

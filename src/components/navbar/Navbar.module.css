@@ -6,6 +6,11 @@
     background-color: #333;
     color: whitesmoke;
     text-transform: uppercase;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
 }
 
 .contenido h2{
@@ -25,4 +30,3 @@
     text-decoration: none;
     margin-right: 1rem;
 }
-
