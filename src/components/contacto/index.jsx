@@ -1,6 +1,7 @@
 // eslint-disable-next-line no-unused-vars
 import React from 'react';
 import style from "./Contacto.module.css";
+import { Carta } from "../../assets/recursos";
 
 function Contacto() {
 
@@ -9,20 +10,27 @@ function Contacto() {
   }
 
   return (
-    <div className={style.contenido}>
-      <h1>Contactame</h1>
-      <form onSubmit={handleSubmit}>
-        <label>Nombre</label>
-        <input type="text" />
+    <div className={style.fondo}>
+      <div className={style.contenido}>
+        <div className={style.imagen}>
+          <img src={Carta} />
+        </div>
+        <div className={style.formulario}>
+          <h1>Contacto</h1>
+          <p>¿Quieres contactarme?<br />Complete el siguiente formulario y me pondre en contacto
+            con usted lo antes posible</p>
+          <form onSubmit={handleSubmit}>
+            <input placeholder="Nombre" type="text" />
 
-        <label>Correo</label>
-        <input type="email" name="correo" id="correo" />
+            <input placeholder="Correo" type="email" name="correo" id="correo" />
 
-        <label>Mensaje</label>
-        <input type="text" />
+            <input placeholder="Asunto" type="text" name="correo" id="correo" />
 
-        <button type='submit'>ENVIAR</button>
-      </form>
+            <textarea placeholder="Mensaje" name="" id="" cols="30" rows="6"></textarea>
+            <button type='submit'>ENVIAR MENSAJE</button>
+          </form>
+        </div>
+      </div>
     </div>
   )
 }

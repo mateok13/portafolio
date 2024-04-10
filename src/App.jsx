@@ -4,6 +4,7 @@ import Info from "./components/info";
 import Habilidades from "./components/habilidades";
 import Proyectos from "./components/proyectos";
 import Contacto from "./components/contacto";
+import "./App.css"
 
 function App() {
   const aboutRef = useRef(null);
@@ -18,6 +19,7 @@ function App() {
       <div ref={skillsRef}><Habilidades/></div>
       <div ref={projectsRef}><Proyectos/></div>
       <div ref={contactRef}><Contacto/></div>
+      <footer>Desarrollado por Jhonny Mateo Rosero Cortes<br />2024</footer>
     </>
   )
 }

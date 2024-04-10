@@ -1,4 +1,3 @@
-import React from 'react';
 import style from './Navbar.module.css';
 
 function Navbar({ homeRef, aboutRef, skillsRef, projectsRef, contactRef }) {

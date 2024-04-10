@@ -1,17 +1,16 @@
-// eslint-disable-next-line no-unused-vars
-import React from 'react';
 import style from "./Skills.module.css";
+import iconos from "../../assets/iconos/iconos"
 
 function Habilidades() {
   return (
     <div className={style.contenido}>
       <h1>Habilidades</h1>
       <ul>
-        <li>Skill 1</li>
-        <li>Skill 2</li>
-        <li>Skill 3</li>
-        <li>Skill 4</li>
-        <li>Skill 5</li>
+        <li><img src={iconos.HTMLIcon}/><br />HTML 5</li>
+        <li><img src={iconos.CSSIcon}/><br />CSS 3</li>
+        <li><img src={iconos.JavaScriptIcon} height={50} width={50}/><br />Java Script</li>
+        <li><img src={iconos.AngularIcon}/><br />Angular</li>
+        <li><img src={iconos.ReactIcon}/><br />React Js</li>
       </ul>
     </div>
   )

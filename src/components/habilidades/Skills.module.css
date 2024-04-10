@@ -1,11 +1,18 @@
 .contenido{
-
+    margin: 0 100px;
+    padding-top: 70px;
 }
 
 .contenido h1{
-    
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 100px;
 }
 
-.contenido ul li{
-
+.contenido ul{
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    padding: 0;
 }

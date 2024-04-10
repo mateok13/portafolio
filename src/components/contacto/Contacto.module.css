@@ -1,19 +1,47 @@
-.contenido{
-
+.fondo{
+    background-color: #5754543b;
 }
 
-.contenido form{
-
+.contenido {
+    margin: 0 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 0;
+    overflow: hidden;
 }
 
-.contenido form label{
-
+.imagen img {
+    height: 380px;
 }
 
-.contenido form input{
-    
+.formulario input,
+.formulario textarea,
+.formulario button {
+    display: block;
+    margin-bottom: 13px;
 }
 
-.contenido form button{
+.formulario input,
+.formulario textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
 
+.formulario h1 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.formulario p {
+    padding-bottom: 10px;
+}
+
+.formulario button {
+    background-color: black;
+    color: white;
+    padding: 12px 20px;
+    border: none;
 }
