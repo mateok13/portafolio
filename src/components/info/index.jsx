@@ -15,11 +15,11 @@ function Info() {
           <div className={style.links}>
             <a href="https://github.com/mateok13" target="_blank" >GitHub<OpenInNewIcon/></a>
             <a href="https://www.linkedin.com/in/mateok13/" target="_blank">LinkedIn<OpenInNewIcon/></a>
-            <a href="/portafolio/src/assets/Curriculum.pdf" target="_blank">Curriculum<OpenInNewIcon/></a>
+            <a href="src/assets/Curriculum.pdf" target="_blank">Curriculum<OpenInNewIcon/></a>
           </div>
         </div>
         <div className={style.presentacion_imagen}>
-          <img src="/portafolio/src/assets/foto.jpg"/>
+          <img src="src/assets/foto.jpg"/>
         </div>
       </div>
       <div className={style.sobreMi}>
