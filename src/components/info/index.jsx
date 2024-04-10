@@ -2,6 +2,7 @@
 import React from 'react';
 import style from './Info.module.css';
 import OpenInNewIcon from '@mui/icons-material/OpenInNew';
+import { Curriculum,Foto } from '../../assets/recursos';
 
 function Info() {
   return (
@@ -15,11 +16,11 @@ function Info() {
           <div className={style.links}>
             <a href="https://github.com/mateok13" target="_blank" >GitHub<OpenInNewIcon/></a>
             <a href="https://www.linkedin.com/in/mateok13/" target="_blank">LinkedIn<OpenInNewIcon/></a>
-            <a href="portafolio/src/recursos/Curriculum.pdf" target="_blank">Curriculum<OpenInNewIcon/></a>
+            <a href={Curriculum} target="_blank">Curriculum<OpenInNewIcon/></a>
           </div>
         </div>
         <div className={style.presentacion_imagen}>
-          <img src="portafolio/src/recursos/foto.jpg"/>
+          <img src={Foto}/>
         </div>
       </div>
       <div className={style.sobreMi}>
