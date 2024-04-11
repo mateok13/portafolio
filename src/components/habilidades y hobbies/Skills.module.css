@@ -17,6 +17,10 @@
     padding: 0;
 }
 
+.contenido li{
+    align-items: center;
+}
+
 .hobbies{
     padding-top: 100px;
 }
