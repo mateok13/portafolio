@@ -12,7 +12,12 @@
 }
 
 .imagen img {
-    height: 380px;
+    height: 420px;
+    margin-right: 20px;
+}
+
+.formulario{
+    height: 420px;
 }
 
 .formulario input,
@@ -22,9 +27,10 @@
     margin-bottom: 13px;
 }
 
+.formulario label,
 .formulario input,
 .formulario textarea {
-    width: 100%;
+    width: 95%;
     padding: 12px;
     border: 1px solid #ccc;
     border-radius: 4px;
@@ -33,10 +39,12 @@
 .formulario h1 {
     font-size: 24px;
     font-weight: bold;
+    padding-bottom: 10px;
 }
 
 .formulario p {
-    padding-bottom: 10px;
+    padding-bottom: 12px;
+    text-shadow: 2px 2px 2px #00000057;
 }
 
 .formulario button {

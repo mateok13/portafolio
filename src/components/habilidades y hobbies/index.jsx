@@ -17,10 +17,10 @@ function Habilidades() {
       <div className={style.hobbies}>
         <h1>Hobbies</h1>
         <ul>
-          <li><img src={iconos.HTMLIcon} /><br />Jugar Futbol</li>
-          <li><img src={iconos.CSSIcon} /><br />Ver anime y series</li>
-          <li><img src={iconos.AngularIcon} /><br />Cocinar</li>
-          <li><img src={iconos.ReactIcon} /><br />Escuchar musica</li>
+          <li><img src={iconos.FutbolIcon} /><br />Jugar Futbol</li>
+          <li><img src={iconos.VerIcon} /><br />Ver anime y series</li>
+          <li><img src={iconos.CocinarIcon} /><br />Cocinar</li>
+          <li><img src={iconos.MusicaIcon} /><br />Escuchar musica</li>
         </ul>
       </div>
     </div>

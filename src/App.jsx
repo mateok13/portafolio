@@ -5,7 +5,7 @@ import Habilidades from "./components/habilidades y hobbies";
 import Studies from "./components/formacion";
 import Proyectos from "./components/proyectos";
 import Contacto from "./components/contacto";
-import "./App.css"
+import Footer from "./components/footer";
 
 function App() {
   const aboutRef = useRef(null);
@@ -22,7 +22,7 @@ function App() {
       <div ref={studiesRef}><Studies/></div>
       <div ref={projectsRef}><Proyectos/></div>
       <div ref={contactRef}><Contacto/></div>
-      <footer>Desarrollado por Jhonny Mateo Rosero Cortes<br />2024</footer>
+      <Footer/>
     </>
   )
 }
