@@ -1,7 +1,7 @@
 import style from './Navbar.module.css';
 
-function Navbar({ homeRef, aboutRef, skillsRef, projectsRef, contactRef }) {
-  // Función para manejar el desplazamiento
+function Navbar({ aboutRef, skillsRef, studiesRef, projectsRef, contactRef }) {
+  
   const scrollToSection = (event, ref) => {
     event.preventDefault();
     if(ref && ref.current){
@@ -13,11 +13,11 @@ function Navbar({ homeRef, aboutRef, skillsRef, projectsRef, contactRef }) {
     <div className={style.contenido}>
         <h2>Mateo Rosero<br /><span>Desarrollador Full-Stack</span></h2>
         <div>
-        <a onClick={(event) => scrollToSection(event, homeRef)} href='#'>Home</a>
-          <a onClick={(event) => scrollToSection(event, aboutRef)} href='#'>About me</a>
-          <a onClick={(event) => scrollToSection(event, skillsRef)} href='#'>Skills</a>
-          <a onClick={(event) => scrollToSection(event, projectsRef)} href='#'>Projects</a>
-          <a onClick={(event) => scrollToSection(event, contactRef)} href='#'>Contact me</a>
+          <a onClick={(event) => scrollToSection(event, aboutRef)} href='#'>Sobre mi</a>
+          <a onClick={(event) => scrollToSection(event, skillsRef)} href='#'>Habilidades</a>
+          <a onClick={(event) => scrollToSection(event, studiesRef)} href='#'>Formacion</a>
+          <a onClick={(event) => scrollToSection(event, projectsRef)} href='#'>Proyectos</a>
+          <a onClick={(event) => scrollToSection(event, contactRef)} href='#'>Contactame</a>
         </div>
     </div>
   )

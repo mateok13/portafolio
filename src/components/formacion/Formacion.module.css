@@ -1,0 +1,28 @@
+.contenido{
+    margin: 0 100px;
+    padding: 70px 0;
+}
+
+.contenido h1{
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 80px;
+}
+
+.contenido ul{
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    padding: 0;
+}
+
+.contenido li{
+    align-items: center;
+    height: 300px;
+}
+
+.contenido img{
+    height: 100%;
+    padding-bottom: 10px;
+}

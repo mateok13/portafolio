@@ -7,7 +7,7 @@
     font-size: 24px;
     font-weight: bold;
     text-align: center;
-    padding-bottom: 100px;
+    padding-bottom: 80px;
 }
 
 .contenido ul{
@@ -15,4 +15,8 @@
     justify-content: space-around;
     list-style-type: none;
     padding: 0;
+}
+
+.hobbies{
+    padding-top: 100px;
 }
