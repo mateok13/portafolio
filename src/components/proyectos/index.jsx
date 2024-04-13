@@ -4,8 +4,10 @@ import style from "./Projects.module.css";
 
 function Proyectos() {
   return (
-    <div className={style.contenido}>
-      <h1>Experiencia Laboral</h1>
+    <div className={style.fondo}>
+      <div className={style.contenido}>
+        <h1>Experiencia Laboral</h1>
+      </div>
     </div>
   )
 }

@@ -1,6 +1,10 @@
+.fondo{
+    background-color: #f8f8f8;
+}
+
 .contenido {
     margin: 0 100px;
-    padding-top: 70px;
+    padding: 100px 0;
 }
 
 .contenido h1 {
@@ -21,7 +25,7 @@
 
 .presentacion_texto {
     flex: 1;
-    margin-right: 20px;
+    padding-right: 20px;
 }
 
 .presentacion_imagen {
@@ -67,12 +71,58 @@
 }
 
 .sobreMi p{
-    padding-bottom: 20px;
     text-shadow: 2px 2px 2px #00000057;
     color: #424242;
 
 }
 
-.links a {
+.links a{
     margin-right: 3rem;
+}
+
+.links a:last-child{
+    margin-right: 0;
+}
+
+@media screen and (max-width: 600px) {
+    .contenido {
+        margin: 0 20px;
+    }
+
+    .contenido p {
+        font-size: 20px;
+    }
+
+    .presentacion {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .presentacion_texto {
+        width: inherit;
+        order: 1;
+    }
+
+    .presentacion_texto h1 {
+        font-size: 27px;
+    }
+
+    .presentacion_imagen {
+        order: -1; 
+        height: 150px;
+        width: 150px;
+        margin-bottom: 20px;
+        align-self: flex-start;
+    }
+
+    .links{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .links a{
+        margin-right: 0;
+    }
 }

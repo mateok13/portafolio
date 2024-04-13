@@ -1,0 +1,7 @@
+.contenido div:nth-child(even) {
+    background-color: #f8f8f8;
+}
+
+.contenido div:nth-child(odd) {
+    background-color: #e9e9e9;
+}

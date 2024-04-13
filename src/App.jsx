@@ -16,13 +16,14 @@ function App() {
 
   return (
     <>
-      <Navbar aboutRef={aboutRef} skillsRef={skillsRef} studiesRef={studiesRef} projectsRef={projectsRef} contactRef={contactRef}/>
-      <div ref={aboutRef}><Info/></div>
-      <div ref={skillsRef}><Habilidades/></div>
-      <div ref={studiesRef}><Studies/></div>
-      <div ref={projectsRef}><Proyectos/></div>
-      <div ref={contactRef}><Contacto/></div>
-      <Footer/>
+      <Navbar aboutRef={aboutRef} skillsRef={skillsRef} studiesRef={studiesRef} projectsRef={projectsRef} contactRef={contactRef} />
+      <div ref={aboutRef}><Info /></div>
+      <div ref={skillsRef}><Habilidades /></div>
+      <div ref={studiesRef}><Studies /></div>
+      <div ref={projectsRef}><Proyectos /></div>
+      <div ref={contactRef}><Contacto /></div>
+      <Footer />
+
     </>
   )
 }

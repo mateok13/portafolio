@@ -18,15 +18,24 @@ function Contacto() {
         <div className={style.formulario}>
           <h1>Contacto</h1>
           <p>¿Quieres contactarme?<br />Complete el siguiente formulario y me pondre en contacto
-            con usted lo antes posible</p>
+            con usted lo antes posible.</p>
           <form onSubmit={handleSubmit}>
-            <input placeholder="Nombre" type="text" />
-
-            <input placeholder="Correo" type="email" name="correo" id="correo" />
-
-            <input placeholder="Asunto" type="text" name="correo" id="correo" />
-
-            <textarea placeholder="Mensaje" name="" id="" cols="30" rows="6"></textarea>
+            <div>
+              <label>Nombre</label>
+              <input placeholder="Nombre" type="text" />
+            </div>
+            <div>
+              <label>Correo</label>
+              <input placeholder="Correo" type="email" name="correo" id="correo" />
+            </div>
+            <div>
+              <label>Asunto</label>
+              <input placeholder="Asunto" type="text" name="asunto" id="asunto" />
+            </div>
+            <div>
+              <label>Mensaje</label>
+              <textarea placeholder="Mensaje" name="mensaje" id="mensaje"></textarea>
+            </div>
             <button type='submit'>ENVIAR MENSAJE</button>
           </form>
         </div>

@@ -1,5 +1,5 @@
 .fondo{
-    background-color: #5754543b;
+    background-color: #f8f8f8;
 }
 
 .contenido {
@@ -7,17 +7,13 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 50px 0;
+    padding: 100px 0;
     overflow: hidden;
 }
 
 .imagen img {
-    height: 420px;
-    margin-right: 20px;
-}
-
-.formulario{
-    height: 420px;
+    height: 500px;
+    margin-right: 10px;
 }
 
 .formulario input,
@@ -27,13 +23,31 @@
     margin-bottom: 13px;
 }
 
-.formulario label,
+.formulario label{
+    color: #9b9b9b;
+}
+
 .formulario input,
 .formulario textarea {
-    width: 95%;
+    width: 100%;
     padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+    border: none;
+    border-bottom: 2px solid #9b9b9b;
+    outline: none;
+}
+
+.formulario div:focus-within label{
+    color: #000000;
+}
+
+.formulario input:focus,
+.formulario textarea:focus {
+    border-bottom: 2px solid #000000;
+    color: #000000;
+}
+
+.formulario textarea{
+    height: 80px;
 }
 
 .formulario h1 {
@@ -48,8 +62,18 @@
 }
 
 .formulario button {
-    background-color: black;
+    background-color: #000000;
     color: white;
     padding: 12px 20px;
     border: none;
+}
+
+@media screen and (max-width: 600px) {
+    .contenido {
+        margin: 0 20px;
+    }
+
+    .imagen{
+        display: none;
+    }
 }

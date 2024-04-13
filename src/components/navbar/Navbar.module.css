@@ -1,4 +1,4 @@
-.contenido{
+.contenido {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -13,20 +13,32 @@
     z-index: 1000;
 }
 
-.contenido h2{
+.contenido h2 {
     font-weight: 100;
     font-size: 26px;
     margin: 0;
 }
 
-.contenido h2 span{
+.contenido h2 span {
     font-weight: bold;
     font-size: 13px;
 }
 
-.contenido div a{
+.contenido div a {
     display: inline;
     color: whitesmoke;
     text-decoration: none;
     margin-right: 1rem;
+}
+
+@media screen and (max-width: 600px) {
+    .contenido{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .contenido div a {
+        display: none;
+    }
 }
