@@ -1,17 +1,61 @@
-.fondo{
+.fondo {
     background-color: #e9e9e9;
 }
 
-.contenido{
+.contenido {
     margin: 0 100px;
-    padding-top: 70px;
+    padding: 70px 0;
 }
 
-.contenido h1{
-    font-size: 24px;
+.contenidoProyectos{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contenidoLista {
+    display: flex;
+    width: 70%;    
+    margin-top: 80px;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f8f8f8;
+    padding: 20px;
+    border: 1px solid #424242;
+    border-radius: 10px;
+}
+
+.listaLenguajes{
+    list-style: circle;
+    padding-left: 20px;
+}
+
+.titulo {
     font-weight: bold;
+}
+
+.tamTitulo {
+    font-size: 24px;
     text-align: center;
-    padding-bottom: 80px;
+}
+
+.tamSubTitulo {
+    font-size: 18px;
+    padding-bottom: 10px;
+}
+
+.contenidoTarjeta {
+    color: #424242;
+    text-shadow: 2px 2px 2px #00000057;
+}
+
+.realizadoCon {
+    font-size: 14px;
+    padding-bottom: 10px;
+}
+
+.realizadoCon h1 {
+    padding-bottom: 10px;
 }
 
 @media screen and (max-width: 600px) {
