@@ -18,7 +18,7 @@ function Proyectos() {
               </div>
               <p className={style.descripcion}>Descripcion: </p>
             </div>
-            <a href="" target="_blank"><img src={GitHub} height={150} width={150} /></a>
+            <a href="https://github.com/Young-Travelers/frontend.git" target="_blank"><img className={style.logoGit} src={GitHub}/></a>
           </li>
           <li className={style.contenidoLista}>
             <div className={style.contenidoTarjeta}>
@@ -31,7 +31,7 @@ function Proyectos() {
               </div>
               <p className={style.descripcion}>Descripcion: </p>
             </div>
-            <a href="https://github.com/Juancarcaicedo/YoungsBackend.git" target="_blank"><img src={GitHub} height={150} width={150} /></a>
+            <a href="https://github.com/Young-Travelers/backend.git" target="_blank"><img className={style.logoGit} src={GitHub}/></a>
           </li>
           <li className={style.contenidoLista}>
             <div className={style.contenidoTarjeta}>
@@ -48,7 +48,7 @@ function Proyectos() {
                 actual de una persona, esta tiene como entrada la fecha de nacimiento de la persona
                 y como salida muestra la edad de la persona en años, meses y dias.</p>
             </div>
-            <a href="https://github.com/mateok13/age-calculator-app.git" target="_blank"><img src={GitHub} height={150} width={150} /></a>
+            <a href="https://github.com/mateok13/age-calculator-app.git" target="_blank"><img className={style.logoGit} src={GitHub}/></a>
           </li>
           <li className={style.contenidoLista}>
             <div className={style.contenidoTarjeta}>
@@ -64,7 +64,7 @@ function Proyectos() {
                 Sus características clave abarcan la creación y organización de tareas, así como
                 la creación de los tiempos de descanso entre ellas.</p>
             </div>
-            <a href="https://github.com/mateok13/TaskZen.git" target="_blank"><img src={GitHub} height={150} width={150} /></a>
+            <a href="https://github.com/mateok13/TaskZen.git" target="_blank"><img className={style.logoGit} src={GitHub}/></a>
           </li>
           <li className={style.contenidoLista}>
             <div className={style.contenidoTarjeta}>
@@ -82,7 +82,7 @@ function Proyectos() {
                 este tipo, se espera que los estudiantes puedan obtener una experiencia clínica más
                 estructurada.</p>
             </div>
-            <a href="https://github.com/mateok13/Front-GesRotes.git" target="_blank"><img src={GitHub} height={150} width={150} /></a>
+            <a href="https://github.com/mateok13/Front-GesRotes.git" target="_blank"><img className={style.logoGit} src={GitHub}/></a>
           </li>
           <li className={style.contenidoLista}>
             <div className={style.contenidoTarjeta}>
@@ -96,7 +96,7 @@ function Proyectos() {
               <p className={style.descripcion}>Descripcion: Este programa permite calcular el
                 valor de una resistencia</p>
             </div>
-            <a href="https://github.com/mateok13/valorResistencia.git" target="_blank"><img src={GitHub} height={150} width={150} /></a>
+            <a href="https://github.com/mateok13/valorResistencia.git" target="_blank"><img className={style.logoGit} src={GitHub}/></a>
           </li>
           <li className={style.contenidoLista}>
             <div className={style.contenidoTarjeta}>
@@ -110,7 +110,23 @@ function Proyectos() {
               <p className={style.descripcion}>Descripcion: Este proyecto desarrolla una aplicación que permite hacer
                 pedidos a domicilo sobre restaurantes en Popayán.</p>
             </div>
-            <a href="" target="_blank"><img src={GitHub} height={150} width={150} /></a>
+            <a href="https://github.com/mateok13/Restaurant_HEX.git" target="_blank"><img className={style.logoGit} src={GitHub}/></a>
+          </li>
+          <li className={style.contenidoLista}>
+            <div className={style.contenidoTarjeta}>
+              <h1 className={style.titulo + " " + style.tamSubTitulo}>Alura Geek</h1>
+              <div className={style.realizadoCon}>
+                <h1>Realizado con:</h1>
+                <ul className={style.listaLenguajes}>
+                  <li>Json-Server</li>
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>JavaScript</li>
+                </ul>
+              </div>
+              <p className={style.descripcion}>Descripcion: Plataforma que permite agregar, listar y eliminar items de una base de datos Json-Server.</p>
+            </div>
+            <a href="https://github.com/mateok13/AluraGeek.git" target="_blank"><img className={style.logoGit} src={GitHub}/></a>
           </li>
         </ul>
       </div>

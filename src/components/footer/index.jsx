@@ -1,6 +1,6 @@
 import style from "./Footer.module.css";
 
-function Formacion() {
+function Footer() {
   return (
     <div className={style.footer}>
       Desarrollado por Jhonny Mateo Rosero Cortes<br />2024
@@ -8,4 +8,4 @@ function Formacion() {
   )
 }
 
-export default Formacion;
+export default Footer;

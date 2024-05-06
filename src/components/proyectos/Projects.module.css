@@ -4,18 +4,19 @@
 
 .contenido {
     margin: 0 100px;
-    padding: 70px 0;
+    padding: 100px 0;
 }
 
 .contenidoProyectos{
     display: flex;
     align-items: center;
+    justify-content: center;
     flex-direction: column;
 }
 
 .contenidoLista {
     display: flex;
-    width: 70%;    
+    width: 100%;    
     margin-top: 80px;
     align-items: center;
     justify-content: space-between;
@@ -49,6 +50,10 @@
     text-shadow: 2px 2px 2px #00000057;
 }
 
+.logoGit{
+    height: 150px;
+}
+
 .realizadoCon {
     font-size: 14px;
     padding-bottom: 10px;
@@ -60,6 +65,13 @@
 
 @media screen and (max-width: 600px) {
     .contenido {
-        margin: 0 20px;
+        margin: 0 40px;
+    }
+
+    .contenidoLista{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 20px;
     }
 }
