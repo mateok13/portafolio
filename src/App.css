@@ -1,5 +1,10 @@
+.botonSubir{
+    display: none;
+}
+
 @media screen and (max-width: 768px) {
     .botonSubir {
+        display: flex;
         position: fixed;
         bottom: 20px;
         right: 20px;
