@@ -2,6 +2,7 @@ import style from "./Contacto.module.css";
 import { Carta } from "../../assets/recursos";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { useState } from "react";
+import Popup from "../popup";
 
 function Contacto() {
 
@@ -70,6 +71,8 @@ function Contacto() {
           console.log(data);
           data.success === "true" && event.target.reset();
           setEnviarDatos(false)
+          setSuccessMessage("Mensaje enviado con éxito");
+          setShowPopup(true);
         })
         .catch(error => {
           console.log(error);
@@ -77,6 +80,15 @@ function Contacto() {
         });
     }
   }
+
+  const [showPopup, setShowPopup] = useState(false);
+  const [successMessage, setSuccessMessage] = useState("");
+
+  const handleClosePopup = () => {
+    setShowPopup(false);
+  };
+
+
 
   return (
     <div className={style.fondo}>
@@ -113,6 +125,7 @@ function Contacto() {
           </form>
         </div>
       </div>
+      {showPopup && (<Popup message={successMessage} onClose={handleClosePopup}/>)}
     </div>
   )
 }

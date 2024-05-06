@@ -1,7 +1,22 @@
-.contenido div:nth-child(even) {
-    background-color: #f8f8f8;
-}
-
-.contenido div:nth-child(odd) {
-    background-color: #e9e9e9;
+@media screen and (max-width: 768px) {
+    .botonSubir {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        z-index: 9999;
+        padding: 10px;
+        border-radius: 50%;
+        background-color: #333;
+        cursor: pointer;
+        text-decoration: none;
+        box-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+        overflow: hidden;
+    }
+    
+    .flechaSubir{
+        height: 50px;
+        width: 50px;
+        filter: invert(100%);
+        object-fit: cover;
+    }
 }

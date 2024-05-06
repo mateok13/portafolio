@@ -7,6 +7,7 @@ import VerIcon from "./ver.png";
 import MusicaIcon from "./escuchar.png";
 import CocinarIcon from "./cocinar.png";
 import FutbolIcon from "./futbol.png";
+import FlechaSubir from "./flechaSubir.png";
 
 
 export default {
@@ -18,5 +19,6 @@ export default {
     "VerIcon": VerIcon,
     "MusicaIcon": MusicaIcon,
     "CocinarIcon": CocinarIcon,
-    "FutbolIcon": FutbolIcon
+    "FutbolIcon": FutbolIcon,
+    "FlechaSubir": FlechaSubir
 }

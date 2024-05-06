@@ -84,7 +84,7 @@
     margin-right: 0;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
     .contenido {
         margin: 0 20px;
     }

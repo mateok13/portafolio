@@ -11,7 +11,7 @@ function Navbar({ aboutRef, skillsRef, studiesRef, projectsRef, contactRef }) {
 
   return (
     <div className={style.contenido}>
-        <h2>Mateo Rosero<br /><span>Desarrollador Full-Stack</span></h2>
+        <h2>Jhonny Rosero<br /><span>Desarrollador Full-Stack</span></h2>
         <div>
           <a onClick={(event) => scrollToSection(event, aboutRef)} href='#'>Sobre mi</a>
           <a onClick={(event) => scrollToSection(event, skillsRef)} href='#'>Habilidades</a>
