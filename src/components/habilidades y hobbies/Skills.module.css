@@ -1,40 +1,84 @@
-.fondo{
-    background-color: #e9e9e9;
+.fondo {
+  background-color: rgba(30, 41, 59, 0.4);
+  padding: 5rem 0;
 }
 
-.contenido{
-    margin: 0 100px;
-    padding: 100px 0;
+.contenido {
+  max-width: 64rem;
+  margin: 0 auto;
+  padding: 0 1.5rem;
 }
 
-.contenido h1{
-    font-size: 24px;
-    font-weight: bold;
-    text-align: center;
-    padding-bottom: 80px;
+.title {
+  font-size: 1.875rem;
+  font-weight: 700;
+  margin-bottom: 3rem;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  color: #ffffff;
 }
 
-.contenido ul{
-    display: flex;
-    height: 200px;
-    flex-flow: column wrap;
-    justify-content: space-around;
-    list-style-type: none;
-    padding: 0;
-    color: #424242;
-    text-shadow: 2px 2px 2px #00000057;
+.titleNumber {
+  color: #06b6d4;
+  font-size: 1.5rem;
 }
 
-.contenido li{
-    text-align: center;
+.gridContainer {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  gap: 1.5rem;
 }
 
-.hobbies{
-    padding-top: 100px;
+.card {
+  background-color: #1e293b;
+  padding: 1.5rem;
+  border-radius: 0.75rem;
+  border: 1px solid #334155;
 }
 
-@media screen and (max-width: 768px) {
-    .contenido {
-        margin: 0 20px;
-    }    
+.cardHeader {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+  color: #06b6d4;
+}
+
+.cardHeader h3 {
+  font-weight: 700;
+  color: #ffffff;
+  font-size: 1.125rem;
+  margin: 0;
+}
+
+.iconHeader {
+  font-size: 1.25rem;
+}
+
+.badgeContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.techBadge {
+  padding: 0.375rem 0.75rem;
+  background-color: #0f172a;
+  border-radius: 0.5rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #94a3b8;
+}
+
+@media (min-width: 640px) {
+  .gridContainer {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1024px) {
+  .gridContainer {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
 }

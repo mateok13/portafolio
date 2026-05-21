@@ -1,63 +1,107 @@
 .fondo {
-    background-color: #f8f8f8;
+  background-color: #0f172a;
+  padding: 5rem 0;
 }
 
 .contenido {
-    margin: 0 100px;
-    padding: 70px 0;
+  max-width: 64rem;
+  margin: 0 auto;
+  padding: 0 1.5rem;
 }
 
-.contenido h1 {
-    font-size: 24px;
-    font-weight: bold;
-    text-align: center;
-    padding-bottom: 80px;
+.title {
+  font-size: 1.875rem;
+  font-weight: 700;
+  margin-bottom: 3rem;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  color: #ffffff;
 }
 
-.contenido ul {
-    display: flex;
-    justify-content: space-between;
-    list-style-type: none;
-    padding: 0;
-    color: #424242;
-    text-shadow: 2px 2px 2px #00000057;
+.titleNumber {
+  color: #06b6d4;
+  font-size: 1.5rem;
 }
 
-.contenido li {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 300px;
-    width: 50%;
-    background-color: #ffff;
+.listaFormacion {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  gap: 1.5rem;
+  padding: 0;
+  list-style-type: none;
+  margin: 0;
 }
 
-.contenido li img {
-    height: 100%;
-    width: auto;
-    padding-bottom: 10px;
+.tarjeta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #1e293b;
+  border: 1px solid #334155;
+  border-radius: 0.75rem;
+  padding: 2.5rem 1.5rem;
+  text-align: center;
+  color: #ffffff;
+  position: relative;
+  transition: transform 0.2s ease, border-color 0.2s ease;
 }
 
-.contenido li p {
-    font-size: 12px;
+.tarjeta:hover {
+  border-color: #06b6d4;
+  transform: translateY(-2px);
 }
 
-@media screen and (max-width: 768px) {
-    .contenido {
-        margin: 0 20px;
-    }
+.periodo {
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: #64748b;
+  margin-bottom: 0.5rem;
+  letter-spacing: 0.05em;
+}
 
-    .contenido li{
-        width: 100%;
-    }
+.logoContainer {
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
 
-    .contenido li img {
-        height: auto;
-        max-height: 200px;
-    }
+.logo {
+  height: 100%;
+  width: auto;
+  max-width: 180px;
+  object-fit: contain;
+}
 
-    .contenido ul {
-        flex-flow: column wrap;
-    }
+.carrera {
+  font-size: 1.125rem;
+  font-weight: 700;
+  margin-bottom: 0.25rem;
+  color: #f1f5f9;
+  line-height: 1.4;
+}
+
+.institucion {
+  font-size: 0.875rem;
+  color: #94a3b8;
+  margin-bottom: 1rem;
+}
+
+.estado {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #10b981;
+  background-color: rgba(16, 185, 129, 0.1);
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  display: inline-block;
+}
+
+@media (min-width: 768px) {
+  .listaFormacion {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
 }

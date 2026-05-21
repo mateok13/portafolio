@@ -1,33 +1,74 @@
 import style from "./Skills.module.css";
-import iconos from "../../assets/iconos/iconos"
+import { Storage as StorageIcon } from '@mui/icons-material';
+import { Code as CodeIcon } from '@mui/icons-material';
+import { Checklist as ChecklistIcon } from '@mui/icons-material';
+import { Grade as GradeIcon } from '@mui/icons-material';
 
 function Habilidades() {
   return (
-    <div className={style.fondo}>
+    <section id="habilidades" className={style.fondo}>
       <div className={style.contenido}>
-        <div className={style.skills}>
-          <h1>Habilidades</h1>
-          <ul>
-            <li><img src={iconos.HTMLIcon} /><br />HTML 5</li>
-            <li><img src={iconos.CSSIcon} /><br />CSS 3</li>
-            <li><img src={iconos.JavaScriptIcon} height={50} width={50} /><br />Java Script</li>
-            <li><img src={iconos.AngularIcon} /><br />Angular</li>
-            <li><img src={iconos.ReactIcon} /><br />React Js</li>
-          </ul>
-        </div>
-        <div className={style.hobbies}>
-          <h1>Hobbies</h1>
-          <ul>
-            <li><img src={iconos.FutbolIcon} /><br />Jugar Futbol</li>
-            <li><img src={iconos.VerIcon} /><br />Ver anime y series</li>
-            <li><img src={iconos.CocinarIcon} /><br />Cocinar</li>
-            <li><img src={iconos.MusicaIcon} /><br />Escuchar musica</li>
-          </ul>
+        
+        <h2 className={style.title}>
+          <span className={style.titleNumber}>02.</span> Tecnologías & Habilidades
+        </h2>
+        
+        <div className={style.gridContainer}>
+          
+          <div className={style.card}>
+            <div className={style.cardHeader}>
+              <StorageIcon className={style.iconHeader} />
+              <h3>Back-End</h3>
+            </div>
+            <div className={style.badgeContainer}>
+              <span className={style.techBadge}>Java</span>
+              <span className={style.techBadge}>Spring Boot</span>
+              <span className={style.techBadge}>APIs RESTful</span>
+            </div>
+          </div>
+
+          <div className={style.card}>
+            <div className={style.cardHeader}>
+              <CodeIcon className={style.iconHeader} />
+              <h3>Front-End</h3>
+            </div>
+            <div className={style.badgeContainer}>
+              <span className={style.techBadge}>React JS</span>
+              <span className={style.techBadge}>Angular</span>
+              <span className={style.techBadge}>JavaScript</span>
+              <span className={style.techBadge}>HTML5 / CSS3</span>
+            </div>
+          </div>
+
+          <div className={style.card}>
+            <div className={style.cardHeader}>
+              <ChecklistIcon className={style.iconHeader} />
+              <h3>Metodologías</h3>
+            </div>
+            <div className={style.badgeContainer}>
+              <span className={style.techBadge}>SCRUM / Kanban</span>
+              <span className={style.techBadge}>Git & GitHub</span>
+              <span className={style.techBadge}>Historias de Usuario</span>
+            </div>
+          </div>
+
+          <div className={style.card}>
+            <div className={style.cardHeader}>
+              <GradeIcon className={style.iconHeader} />
+              <h3>Intereses</h3>
+            </div>
+            <div className={style.badgeContainer}>
+              <span className={style.techBadge}>Jugar Fútbol</span>
+              <span className={style.techBadge}>Anime & Series</span>
+              <span className={style.techBadge}>Cocinar</span>
+              <span className={style.techBadge}>Música</span>
+            </div>
+          </div>
+
         </div>
       </div>
-    </div>
-
-  )
+    </section>
+  );
 }
 
 export default Habilidades;

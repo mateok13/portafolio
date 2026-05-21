@@ -1,47 +1,55 @@
 .contenido {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: .4rem;
-    background-color: #333;
-    color: whitesmoke;
-    text-transform: uppercase;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 1000;
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background-color: rgba(15, 23, 42, 0.8);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid #1E293B;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .contenido h2 {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    font-weight: 100;
-    font-size: 26px;
-    margin: 0;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: #06B6D4;
+  margin: 0;
+  line-height: 1.2;
 }
 
 .contenido h2 span {
-    font-weight: bold;
-    font-size: 13px;
+  font-size: 1.25rem;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+.contenido div {
+  display: flex;
+  gap: 1.5rem;
 }
 
 .contenido div a {
-    display: inline;
-    color: whitesmoke;
-    text-decoration: none;
-    margin-right: 1rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #94A3B8;
+  text-decoration: none;
+  cursor: pointer;
+  transition: color 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.contenido div a:hover {
+  color: #06B6D4;
 }
 
 @media screen and (max-width: 768px) {
-    .contenido{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
+  .contenido {
+    justify-content: center;
+  }
 
-    .contenido div a {
-        display: none;
-    }
+  .contenido div {
+    display: none;
+  }
 }

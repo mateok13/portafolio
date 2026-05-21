@@ -1,137 +1,140 @@
 import style from "./Projects.module.css";
-import { GitHub } from '../../assets/recursos';
+import { Folder, GitHub } from '@mui/icons-material';
 
 function Proyectos() {
   return (
-    <div className={style.fondo}>
+    <section id="proyectos" className={style.fondo}>
       <div className={style.contenido}>
-        <h1 className={style.titulo + " " + style.tamTitulo}>Experiencia Laboral</h1>
-        <ul className={style.contenidoProyectos}>
-          <li className={style.contenidoLista}>
-            <div className={style.contenidoTarjeta}>
-              <h1 className={style.titulo + " " + style.tamSubTitulo}>Voluntariado Front-End</h1>
-              <div className={style.realizadoCon}>
-                <h1>Realizado con:</h1>
-                <ul className={style.listaLenguajes}>
-                  <li>Angular</li>
-                </ul>
+
+        <h2 className={style.title}>
+          <span className={style.titleNumber}>04.</span> Proyectos Destacados
+        </h2>
+
+        <div className={style.gridContainer}>
+
+          <div className={style.card}>
+            <div className={style.cardTop}>
+              <div className={style.cardHeader}>
+                <Folder className={style.folderIcon} />
               </div>
-              <p className={style.descripcion}>Descripcion: </p>
+              <h3 className={style.projectTitle}>MedLens</h3>
+              <p className={style.descripcion}>
+                Aplicación móvil inteligente que automatiza el control de medicamentos mediante la captura fotográfica de fórmulas médicas. Extrae la información con IA, genera alarmas de dosis automáticas y gestiona el inventario de medicamentos remanentes.
+              </p>
             </div>
-            <a href="https://github.com/Young-Travelers/frontend.git" target="_blank"><img className={style.logoGit} src={GitHub}/></a>
-          </li>
-          <li className={style.contenidoLista}>
-            <div className={style.contenidoTarjeta}>
-              <h1 className={style.titulo + " " + style.tamSubTitulo}>Voluntariado Back-End</h1>
-              <div className={style.realizadoCon}>
-                <h1>Realizado con:</h1>
-                <ul className={style.listaLenguajes}>
-                  <li>Spring Boot</li>
-                </ul>
+            <div className={style.techContainer}>
+              <span className={style.techTag}>#Dart</span>
+              <span className={style.techTag}>#Flutter</span>
+              <span className={style.techTag}>#IA</span>
+            </div>
+          </div>
+
+          <div className={style.card}>
+            <div className={style.cardTop}>
+              <div className={style.cardHeader}>
+                <Folder className={style.folderIcon} />
               </div>
-              <p className={style.descripcion}>Descripcion: </p>
+              <h3 className={style.projectTitle}>Sistema de Gestión Escolar</h3>
+              <p className={style.descripcion}>
+                Plataforma integral orientada a instituciones educativas de cualquier nivel. Diseñada desde el análisis riguroso de historias de usuario para centralizar el control administrativo, la asignación de matrículas y el seguimiento académico de estudiantes.
+              </p>
             </div>
-            <a href="https://github.com/Young-Travelers/backend.git" target="_blank"><img className={style.logoGit} src={GitHub}/></a>
-          </li>
-          <li className={style.contenidoLista}>
-            <div className={style.contenidoTarjeta}>
-              <h1 className={style.titulo + " " + style.tamSubTitulo}>Calculadora de edad</h1>
-              <div className={style.realizadoCon}>
-                <h1>Realizado con:</h1>
-                <ul className={style.listaLenguajes}>
-                  <li>HTML</li>
-                  <li>CSS</li>
-                  <li>JavaScript</li>
-                </ul>
+            <div className={style.techContainer}>
+              <span className={style.techTag}>#Java</span>
+              <span className={style.techTag}>#Spring Boot</span>
+              <span className={style.techTag}>#React</span>
+              <span className={style.techTag}>#Arquitectura</span>
+            </div>
+          </div>
+
+          <div className={style.card}>
+            <div className={style.cardTop}>
+              <div className={style.cardHeader}>
+                <Folder className={style.folderIcon} />
               </div>
-              <p className={style.descripcion}>Descripcion: Pagina web capaz de calcular la edad
-                actual de una persona, esta tiene como entrada la fecha de nacimiento de la persona
-                y como salida muestra la edad de la persona en años, meses y dias.</p>
+              <h3 className={style.projectTitle}>Plataforma Web - Asociación Internacional de Voluntarios Profesionales</h3>
+              <p className={style.descripcion}>
+                Participación activa como Desarrollador Full-Stack en el voluntariado internacional. Responsable del diseño y despliegue de la arquitectura del servidor, la creación de módulos de seguridad y el acoplamiento de la interfaz gráfica modular para el consumo de servicios REST.
+              </p>
             </div>
-            <a href="https://github.com/mateok13/age-calculator-app.git" target="_blank"><img className={style.logoGit} src={GitHub}/></a>
-          </li>
-          <li className={style.contenidoLista}>
-            <div className={style.contenidoTarjeta}>
-              <h1 className={style.titulo + " " + style.tamSubTitulo}>TaskZen</h1>
-              <div className={style.realizadoCon}>
-                <h1>Realizado con:</h1>
-                <ul className={style.listaLenguajes}>
-                  <li>Kotlin</li>
-                </ul>
+            <div className={style.techContainer}>
+              <span className={style.techTag}>#Java</span>
+              <span className={style.techTag}>#Spring Boot</span>
+              <span className={style.techTag}>#Angular</span>
+              <span className={style.techTag}>#REST-API</span>
+            </div>
+          </div>
+
+          <div className={style.card}>
+            <div className={style.cardTop}>
+              <div className={style.cardHeader}>
+                <Folder className={style.folderIcon} />
+                <div className={style.linksContainer}>
+                  <a href="https://github.com/mateok13/Front-GesRotes.git" target="_blank" rel="noreferrer" className={style.iconLink}>
+                    <GitHub />
+                  </a>
+                </div>
               </div>
-              <p className={style.descripcion}>Descripcion: TaskZen es una aplicación creada con
-                el propósito de facilitar la gestión de tareas y momentos de descanso entre estas.
-                Sus características clave abarcan la creación y organización de tareas, así como
-                la creación de los tiempos de descanso entre ellas.</p>
+              <h3 className={style.projectTitle}>GesRotes</h3>
+              <p className={style.descripcion}>
+                Sistema web especializado que permite a estudiantes de medicina y supervisores planificar rotaciones clínicas, cronometrar horas de prácticas hospitalarias y registrar evaluaciones de rendimiento estructural.
+              </p>
             </div>
-            <a href="https://github.com/mateok13/TaskZen.git" target="_blank"><img className={style.logoGit} src={GitHub}/></a>
-          </li>
-          <li className={style.contenidoLista}>
-            <div className={style.contenidoTarjeta}>
-              <h1 className={style.titulo + " " + style.tamSubTitulo}>GesRotes</h1>
-              <div className={style.realizadoCon}>
-                <h1>Realizado con:</h1>
-                <ul className={style.listaLenguajes}>
-                  <li>React JS</li>
-                  <li>CSS</li>
-                </ul>
+            <div className={style.techContainer}>
+              <span className={style.techTag}>#React JS</span>
+              <span className={style.techTag}>#CSS Modules</span>
+              <span className={style.techTag}>#GestiónClínica</span>
+            </div>
+          </div>
+
+          <div className={style.card}>
+            <div className={style.cardTop}>
+              <div className={style.cardHeader}>
+                <Folder className={style.folderIcon} />
+                <div className={style.linksContainer}>
+                  <a href="https://github.com/mateok13/TaskZen.git" target="_blank" rel="noreferrer" className={style.iconLink}>
+                    <GitHub />
+                  </a>
+                </div>
               </div>
-              <p className={style.descripcion}>Descripcion: Este programa permitirá a los estudiantes y
-                a los supervisores médicos registrar y planificar las rotaciones, realizar un seguimiento
-                de las horas trabajadas, y evaluar el rendimiento de los estudiantes. Con un programa de
-                este tipo, se espera que los estudiantes puedan obtener una experiencia clínica más
-                estructurada.</p>
+              <h3 className={style.projectTitle}>TaskZen</h3>
+              <p className={style.descripcion}>
+                Aplicación enfocada en la productividad personal. Permite organizar flujos de tareas diarias e intercalar automáticamente intervalos de descanso optimizados para prevenir el agotamiento mental.
+              </p>
             </div>
-            <a href="https://github.com/mateok13/Front-GesRotes.git" target="_blank"><img className={style.logoGit} src={GitHub}/></a>
-          </li>
-          <li className={style.contenidoLista}>
-            <div className={style.contenidoTarjeta}>
-              <h1 className={style.titulo + " " + style.tamSubTitulo}>Valor Resistencia</h1>
-              <div className={style.realizadoCon}>
-                <h1>Realizado con:</h1>
-                <ul className={style.listaLenguajes}>
-                  <li>Java</li>
-                </ul>
+            <div className={style.techContainer}>
+              <span className={style.techTag}>#Kotlin</span>
+              <span className={style.techTag}>#Android</span>
+              <span className={style.techTag}>#Mobile</span>
+            </div>
+          </div>
+
+          <div className={style.card}>
+            <div className={style.cardTop}>
+              <div className={style.cardHeader}>
+                <Folder className={style.folderIcon} />
+                <div className={style.linksContainer}>
+                  <a href="https://github.com/mateok13/age-calculator-app.git" target="_blank" rel="noreferrer" className={style.iconLink}>
+                    <GitHub />
+                  </a>
+                </div>
               </div>
-              <p className={style.descripcion}>Descripcion: Este programa permite calcular el
-                valor de una resistencia</p>
+              <h3 className={style.projectTitle}>Calculadora de edad</h3>
+              <p className={style.descripcion}>
+                Aplicación web interactiva que procesa fechas de nacimiento completas para calcular con precisión cronométrica la edad exacta del usuario desglosada en años, meses y días.
+              </p>
             </div>
-            <a href="https://github.com/mateok13/valorResistencia.git" target="_blank"><img className={style.logoGit} src={GitHub}/></a>
-          </li>
-          <li className={style.contenidoLista}>
-            <div className={style.contenidoTarjeta}>
-              <h1 className={style.titulo + " " + style.tamSubTitulo}>Restaurantes Online</h1>
-              <div className={style.realizadoCon}>
-                <h1>Realizado con:</h1>
-                <ul className={style.listaLenguajes}>
-                  <li>Java</li>
-                </ul>
-              </div>
-              <p className={style.descripcion}>Descripcion: Este proyecto desarrolla una aplicación que permite hacer
-                pedidos a domicilo sobre restaurantes en Popayán.</p>
+            <div className={style.techContainer}>
+              <span className={style.techTag}>#JavaScript</span>
+              <span className={style.techTag}>#HTML5</span>
+              <span className={style.techTag}>#CSS3</span>
             </div>
-            <a href="https://github.com/mateok13/Restaurant_HEX.git" target="_blank"><img className={style.logoGit} src={GitHub}/></a>
-          </li>
-          <li className={style.contenidoLista}>
-            <div className={style.contenidoTarjeta}>
-              <h1 className={style.titulo + " " + style.tamSubTitulo}>Alura Geek</h1>
-              <div className={style.realizadoCon}>
-                <h1>Realizado con:</h1>
-                <ul className={style.listaLenguajes}>
-                  <li>Json-Server</li>
-                  <li>HTML</li>
-                  <li>CSS</li>
-                  <li>JavaScript</li>
-                </ul>
-              </div>
-              <p className={style.descripcion}>Descripcion: Plataforma que permite agregar, listar y eliminar items de una base de datos Json-Server.</p>
-            </div>
-            <a href="https://github.com/mateok13/AluraGeek.git" target="_blank"><img className={style.logoGit} src={GitHub}/></a>
-          </li>
-        </ul>
+          </div>
+
+        </div>
       </div>
-    </div>
-  )
+    </section>
+  );
 }
 
 export default Proyectos;

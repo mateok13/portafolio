@@ -1,6 +1,6 @@
 import style from './Navbar.module.css';
 
-function Navbar({ aboutRef, skillsRef, studiesRef, projectsRef, contactRef }) {
+function Navbar({ aboutRef, experienceRef, skillsRef, studiesRef, projectsRef, contactRef }) {
   
   const scrollToSection = (event, ref) => {
     event.preventDefault();
@@ -10,16 +10,17 @@ function Navbar({ aboutRef, skillsRef, studiesRef, projectsRef, contactRef }) {
   };
 
   return (
-    <div className={style.contenido}>
-        <h2>Jhonny Rosero<br /><span>Desarrollador Full-Stack</span></h2>
+    <nav className={style.contenido}>
+        <h2>JHONNY ROSERO<br /><span>INGENIERO DE SISTEMAS</span></h2>
         <div>
-          <a onClick={(event) => scrollToSection(event, aboutRef)} href='#'>Sobre mi</a>
-          <a onClick={(event) => scrollToSection(event, skillsRef)} href='#'>Habilidades</a>
-          <a onClick={(event) => scrollToSection(event, studiesRef)} href='#'>Formacion</a>
-          <a onClick={(event) => scrollToSection(event, projectsRef)} href='#'>Proyectos</a>
-          <a onClick={(event) => scrollToSection(event, contactRef)} href='#'>Contactame</a>
+          <a onClick={(event) => scrollToSection(event, aboutRef)} href='#'>SOBRE MÍ</a>
+          <a onClick={(event) => scrollToSection(event, experienceRef)} href='#'>EXPERIENCIA</a>
+          <a onClick={(event) => scrollToSection(event, skillsRef)} href='#'>HABILIDADES</a>
+          <a onClick={(event) => scrollToSection(event, studiesRef)} href='#'>FORMACIÓN</a>
+          <a onClick={(event) => scrollToSection(event, projectsRef)} href='#'>PROYECTOS</a>
+          <a onClick={(event) => scrollToSection(event, contactRef)} href='#'>CONTACTAME</a>
         </div>
-    </div>
+    </nav>
   )
 }
 

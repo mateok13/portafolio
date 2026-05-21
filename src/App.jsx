@@ -1,6 +1,7 @@
 import { useRef, useState, useEffect } from 'react';
 import Navbar from "./components/navbar";
 import Info from "./components/info";
+import Experiencia from './components/experiencia';
 import Habilidades from "./components/habilidades y hobbies";
 import Studies from "./components/formacion";
 import Proyectos from "./components/proyectos";
@@ -11,6 +12,7 @@ import "./App.css"
 
 function App() {
   const aboutRef = useRef(null);
+  const experienceRef = useRef(null);
   const skillsRef = useRef(null);
   const studiesRef = useRef(null);
   const projectsRef = useRef(null);
@@ -44,8 +46,9 @@ function App() {
 
   return (
     <>
-      <Navbar aboutRef={aboutRef} skillsRef={skillsRef} studiesRef={studiesRef} projectsRef={projectsRef} contactRef={contactRef} />
+      <Navbar aboutRef={aboutRef} experienceRef={experienceRef} skillsRef={skillsRef} studiesRef={studiesRef} projectsRef={projectsRef} contactRef={contactRef} />
       <div ref={aboutRef}><Info /></div>
+      <div ref={experienceRef}><Experiencia /></div>
       <div ref={skillsRef}><Habilidades /></div>
       <div ref={studiesRef}><Studies /></div>
       <div ref={projectsRef}><Proyectos /></div>
