@@ -1,7 +1,10 @@
 .contenido {
-  position: sticky;
+  position: fixed;
   top: 0;
-  z-index: 50;
+  left: 0;
+  width: 100%;
+  box-sizing: border-box;
+  z-index: 9999;
   background-color: rgba(15, 23, 42, 0.8);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
@@ -47,9 +50,21 @@
 @media screen and (max-width: 768px) {
   .contenido {
     justify-content: center;
+    padding: 0.8rem 1rem;
   }
 
   .contenido div {
     display: none;
+  }
+
+  .contenido h2 {
+    font-size: 0.75rem;
+    text-align: center;
+  }
+
+  .contenido h2 span {
+    font-size: 1.05rem;
+    display: block;
+    margin-top: 2px;
   }
 }

@@ -32,3 +32,10 @@
   font-family: monospace;
   letter-spacing: 0.02em;
 }
+
+@media screen and (max-width: 768px) {
+  .contenido {
+    justify-content: center;
+    padding: 0.8rem 1rem;
+  }
+}
